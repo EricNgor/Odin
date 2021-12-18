@@ -21,6 +21,12 @@ button {
   padding: 16px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: rgb(88, 218, 235);
 }
 
 ul {
@@ -34,4 +40,11 @@ ul {
 
 li {
   padding: 16px;
+  color: black;
+  cursor: pointer;
+
+}
+
+li:hover {
+  background-color: hsl(0, 0%, 80%);
 }

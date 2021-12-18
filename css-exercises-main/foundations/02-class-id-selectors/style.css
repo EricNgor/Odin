@@ -1,0 +1,24 @@
+.a {
+  background: hsl(0, 100%, 80%);
+  font-size: large;
+  color: black;
+}
+
+#b {
+  font-size: xx-large;
+  color: blue;
+}
+
+.c {
+  background: hsl(0, 100%, 80%);
+  font-size: large;
+  color: black;
+}
+
+#d {
+  background: hsl(90, 100%, 70%);
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
