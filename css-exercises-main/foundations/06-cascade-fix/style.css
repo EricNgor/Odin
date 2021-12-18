@@ -3,7 +3,7 @@
   color: hsl(0, 100%, 50%);
 }
 
-.small-para {
+.para.small-para {
   font-size: 12px;
 }
 
@@ -18,13 +18,17 @@
   font-weight: bold;
 } 
 
-.button {
+.cancel {
   background-color: #ffc0cb;
   color: black;
+
+}
+
+.button {
   font-size: 20px;
 }
 
-.child {
+div .text.child {
   color: red;
   font-size: 14px;
 }
