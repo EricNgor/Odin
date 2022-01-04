@@ -1,0 +1,78 @@
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 128px;
+}
+
+.player-pick, .cpu-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cpu-pick .choice-display {
+  overflow: hidden;
+}
+
+.choice-display {
+  border: 2px dotted gray;
+}
+
+.choices {
+  display: flex;
+}
+
+.choice-container, .choice-display {
+  width: 128px;
+  height: 128px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-container {
+  border: 2px solid transparent;
+}
+
+.choices .choice-container:hover {
+  border: 2px solid gray;
+}
+
+.feedback-container {
+  margin: 64px 0;
+  /* margin-bottom: 128px; */
+  display: block;
+  font-size: 1.5em;
+  min-height: 1.5em;
+}
+
+footer {
+  background: #e0b464;
+  padding: 24px;
+  display: flex;
+  /* justify-self: baseline; */
+  align-self: stretch;
+  justify-self: end;
+  justify-content: center;
+}
