@@ -61,7 +61,6 @@ h1 {
 
 .feedback-container {
   margin: 64px 0;
-  /* margin-bottom: 128px; */
   display: block;
   font-size: 1.5em;
   min-height: 1.5em;
@@ -71,8 +70,6 @@ footer {
   background: #e0b464;
   padding: 24px;
   display: flex;
-  /* justify-self: baseline; */
   align-self: stretch;
-  justify-self: end;
   justify-content: center;
 }

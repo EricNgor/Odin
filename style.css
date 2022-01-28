@@ -46,6 +46,7 @@ footer {
 .odin-link {
   text-decoration: none;
   color: black;
+  transition: transform .1s ease-in-out;
 }
 
 .odin-link:hover {

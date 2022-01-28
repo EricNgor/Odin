@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 96px;
+}
+
+.app-container {
+  display: flex;
+  gap: 32px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.reset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#reset-input {
+  width: 200px;
+}
+
+.reset-button {
+  background: white;
+  color: #527ef0;
+  border: 1px solid #527ef0;
+  border-radius: 50rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out;
+  font-size: 16px;
+  
+}
+
+.reset-button:hover {
+  background: #527ef0;
+  color: white;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  box-shadow: 2px 2px 10px 2px gray;
+}
+
+.canvas .cell {
+  /* border: 1px solid black; */
+}
+
+.cell.filled {
+  background: black;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background: #e0b464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: black;
+}
