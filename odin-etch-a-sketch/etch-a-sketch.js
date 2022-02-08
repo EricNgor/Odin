@@ -17,12 +17,15 @@ resetInput.addEventListener('input', (evt) => {
   const val = resetInput.value;
   resetLabel.innerHTML = `${val} x ${val}`;
 });
+resetInput.addEventListener('change', (evt) => {
+  let cells = document.querySelectorAll('.cell');
+  cells.forEach(cell => cell.classList.remove('filled'));
+  setGrid(resetInput.value);
+});
 
 resetButton.addEventListener('click', (evt) => {
   let cells = document.querySelectorAll('.cell');
   cells.forEach(cell => cell.classList.remove('filled'));
-
-  setGrid(resetInput.value);
 });
 
 function setGrid(size) {
@@ -38,14 +41,13 @@ function setGrid(size) {
 
       let cell = document.createElement('div');
       cell.classList.add('cell');
-      const fillCell = (evt) => {
+
+      cell.addEventListener('mouseenter', (evt) => {
         evt.preventDefault();
         if (evt.buttons === 1) {
           cell.classList.add('filled');
         }
-    
-      }
-      cell.addEventListener('mouseenter', fillCell);
+      });
       cell.addEventListener('mousedown', (evt) => {
         evt.preventDefault();
         cell.classList.add('filled');
