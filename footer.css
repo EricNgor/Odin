@@ -1,0 +1,20 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: #e0b464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-link {
+  color: black;
+  transition: transform .1s ease-in-out;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
+}

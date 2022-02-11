@@ -175,8 +175,15 @@ footer {
   display: flex;
   justify-content: center;
   padding: 48px;
+  gap: 16px;
+  color: white;
 }
 
-footer .copyright {
+.github-link {
+  transition: transform .1s ease-in-out;
   color: white;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
 }

@@ -92,8 +92,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
-footer a {
+.github-link {
   color: black;
+  transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
 }
