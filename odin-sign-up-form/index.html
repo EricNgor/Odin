@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/531f59e25a.js"></script>
+  <script src="script.js" defer></script>
+  <title>Sign-up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="splash-container">
+      <div class="splash-banner">
+        <img src="logo.png" alt="Splash Icon" class="splash-icon" width="100px" height="auto" />
+        <div class="splash-banner-text">Odin</div>
+      </div>
+      <div class="credit">Photo by <a href="https://www.riotgames.com/en/work-with-us/offices/los-angeles/the-new-la-campus">Riot Games</a></div>
+    </div>
+    <div class="sign-up-container">
+      <div class="header">
+        <div class="sh1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</div>
+        <div class="sh2">You <i>know</i> you want to.</div>
+
+        <div class="cta">Let's do this!</div>
+      </div>
+      <form class="sign-up-form">
+        <div class="form-input">
+          <div class="field">
+            <input type="text" name="fn" id="fn" required />
+            <span class="label-placeholder">First Name</span>
+            <label for="fn" class="placeholder">First Name</label>
+          </div>
+          <div class="field">
+            <input type="text" name="ln" id="ln" required />
+            <span class="label-placeholder">Last Name</span>
+            <label for="ln" class="placeholder">Last Name</label>
+          </div>
+          <div class="field">
+            <input type="email" name="email" id="email" />
+            <span class="label-placeholder">Email</span>
+            <label for="email" class="placeholder">Email</label>
+          </div>
+          <div class="field">
+            <input type="tel" name="phone-number" id="phone-number" />
+            <span class="label-placeholder">Phone Number</span>
+            <label for="phone-number" class="placeholder">Phone Number</label>
+          </div>
+          <div class="field">
+            <input type="password" name="password" id="password" required />
+            <span class="label-placeholder">Password</span>
+            <label for="password" class="placeholder">Password</label>
+          </div>
+          <div class="field">
+            <input type="password" name="confirm-password" id="confirm-password" required />
+            <span class="label-placeholder">Confirm Password</span>
+            <label for="confirm-password" class="placeholder">Confirm Password</label>
+          </div>
+        </div>
+
+        <button class="submit-button" type="submit">Create Account</button>
+      </form>
+
+      <div class="log-in">Already have an account? <a href="#">Log In</a></div>
+
+      <footer>
+        © 2022 Eric Ngor
+        <a href="https://github.com/EricNgor" class="github-link">
+          <span class="icon"><i class="fa fa-github"></i></span>
+        </a>
+      </footer>
+    </div>
+    
+  </div>
+</body>
+</html>

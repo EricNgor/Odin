@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(Norse-Bold.otf);
+}
+
+@media only screen and (orientation: portrait) {
+  container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mark Pro", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.splash-container {
+  width: 40vw;
+  background: url(riot.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.splash-banner {
+  position: relative;
+  bottom: 60%;
+  align-self: stretch;
+  background-color: rgba(0 0 0 / .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 1em;
+}
+
+.splash-banner-text {
+  font-family: "Norse Bold";
+  font-size: 6rem;
+  color: white;
+}
+
+.credit {
+  color: lightgray;
+  margin-bottom: 1em;
+}
+
+.credit a {
+  text-decoration: none;
+  color: white;
+  transition: color .2s ease-in-out;
+  text-decoration: underline;
+}
+
+.credit a:hover {
+  color: black;
+}
+
+.sign-up-container {
+  width: 60vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.sign-up-container > * {
+  max-width: 40vw;
+  padding-left: 3rem;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.sh1 {
+  margin-bottom: 2rem;
+}
+.sh2 {
+  margin-bottom: 3rem;
+}
+.cta {
+  color: hsl(0 0% 25%);
+}
+
+.sign-up-form {
+  padding: 3rem;
+  box-shadow: 0px 16px 8px -8px rgba(0 0 0 / .2);
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.sign-up-form > * {
+  max-width: 50vw;
+}
+
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.field {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.field .label-placeholder,
+.field .placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(0 0% 40%);
+  text-decoration: uppercase;
+  transition: all .25s cubic-bezier(.2, 0, .4, 1);
+  pointer-events: none;
+}
+
+.field .label-placeholder {
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(.5em, .5em);
+  opacity: 0;
+}
+
+.field .placeholder {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(1.5em, 2em);
+}
+
+.field.not-empty .label-placeholder,
+input:focus ~ .label-placeholder {
+  opacity: 1;
+}
+.field.not-empty .placeholder,
+input:focus ~ .placeholder {
+  opacity: 0;
+}
+
+.field input {
+  width: calc(min(30ch, 20vw));
+  height: 6ch;
+  border: 0;
+  border-radius: 0.2rem;
+  background-color: hsl(0 0% 90%);
+  font-size: 18px;
+  padding: 1ch 0 0 2ch;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.field input:hover {
+  background-color: hsl(0 0% 87%);
+}
+
+.submit-button {
+  background-color: #d03c3c;
+  padding: 1rem;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: .2rem;
+}
+
+.submit-button:hover {
+  background-color: #b82c34;
+}
+
+.log-in {
+  font-weight: 700;
+  color: hsl(0 0% 50%);
+}
+
+.log-in a {
+  text-decoration: underline;
+  color: hsl(0 0% 50%);
+}
+
+.log-in a:hover {
+  color: hsl(0 0% 20%);
+}
+
+.sign-up-container footer {
+  margin-top: 4rem;
+  display: flex;
+  background: hsl(0 0% 31.4%);
+  max-width: 100vw;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.github-link {
+  color: black;
+  transition: transform .1s ease-in-out;
+}
+
+.github-link:hover {
+  transform: scale(1.1);
+}
